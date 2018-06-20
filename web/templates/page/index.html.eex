@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    Hi <span id="user"><%= @conn.params["user"] %></span>! Welcome to chat
+    Hi <span id="user"><%= "#{current_user(@conn).email}" %></span>! Welcome to chat
   </div>
 
   <div class="col-md-8">
